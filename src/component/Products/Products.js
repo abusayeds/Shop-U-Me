@@ -27,7 +27,7 @@ const Products = () => {
     
       return (
           <div className='shop-container'>
-              <div className="product-container">
+              <div className=" md:grid grid-cols-3 gap-4 p-8">
                {
                 products.map(product => <Product
                 key={product.id}
@@ -37,12 +37,12 @@ const Products = () => {
                }
              
               </div>
-              <div className="order-container">
+              <div className=" p-5 bg-slate-100">
                <Cart
                cart={cart}
                clereCart ={clereCart}
                >
-                 <Link to='/order'><button>See your order</button></Link>
+                 <Link to='/order'><button className='bg-white hover:bg-slate-200'>See your order</button></Link>
                </Cart>
               </div>
               

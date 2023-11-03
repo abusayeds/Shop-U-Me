@@ -1,15 +1,15 @@
-.order-review img{
+/* .order-review img{
     width: 91px;
     height: 91px;
     border-radius: 10px;
     
-}
+} */
 .order-review{
     display: flex;
     margin: 10px 0;
     width: 571px;
     margin: 50px auto;
-    border: 2px solid lightblue;
+    border: 2px solid rgb(231, 239, 241);
     border-radius: 10px;
     padding: 20px;
 }
@@ -39,4 +39,15 @@
 .delete-btn:hover{
     cursor: pointer;
     background-color: rgb(236, 87, 87, 0.5);
+}
+@media screen and (max-width:400px) {
+    .order-review{
+       
+        width: auto;
+     ;
+    }
+    .order-reviewn img{
+        height: full;
+    }
+    
 }

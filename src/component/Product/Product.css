@@ -1,11 +1,12 @@
 
 
 .product{
-    height: 500px;
+    /* height: 500px;
     border: 1px solid rgb(216, 185, 163);
     padding: 20px;
     margin: 20px;
-    border-radius: 5px;
+    border-radius: 5px; */
+    height: 500px;
     position: relative;
 }
 .btn-cart{
@@ -23,10 +24,6 @@
 .btn-text{
     margin-right: 5px;
 }
-.btn-cart:hover{
-    background-color:rgb(36, 36, 206);
-    color: whitesmoke;
-    
-} 
+
 
 

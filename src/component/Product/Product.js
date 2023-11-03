@@ -7,20 +7,34 @@ const Product = (props) => {
     const {name , img ,price ,seller, ratings} =props.product
 
     return (
-        <div>
-            <div className='product'>
-            <img src={img} alt=""  />
+        <div className='border my-4 rounded h-full product '>
+            
+          <div>
+          <img className='md:h-80 w-full' src={img} alt=""  />
+          </div>
+
+
+           <div className='p-4 '>
             <h4>Name: {name}</h4>
             <p>Price: {price}</p>
             <p>Seller: {seller}</p>
             <p>Ratings: {ratings}</p>
-            <button onClick={ () =>props.hendleAddTocart(props.product)} className='btn-cart'>
-            <p className='btn-text'>Add to Cart</p>
-            <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
+            
+           </div>
+           <div className=' flex justify-center '>
+          <div className='btn-cart '>
+          <button onClick={ () =>props.hendleAddTocart(props.product)} className='   p-2 rounded'>
+            <p className='text-red-500 font-bold'>Add to Cart  <FontAwesomeIcon className='text-red-500' icon={faShoppingCart}></FontAwesomeIcon></p>
+        
             </button>
+          </div>
+           </div>
+
+
+          
             </div>
           
-        </div>
+       
     );
 };
 

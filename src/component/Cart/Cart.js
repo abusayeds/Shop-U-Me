@@ -25,7 +25,7 @@ const {cart, clereCart ,children} =props
                 <p>Tax: {tax} </p>
                 <h4>Grand total: {Grandtotal}</h4>
                  {children}
-                <button onClick={clereCart} className='btn-remove' >Order list remove</button>
+                <button onClick={clereCart} className='bg-white hover:bg-slate-200' >Order list remove</button>
                 <br />
                
         </div>
