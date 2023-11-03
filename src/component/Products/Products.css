@@ -1,0 +1,44 @@
+.shop-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+ 
+    
+}
+.product-container img{
+    width: 250px;
+
+}
+
+
+.order-container{
+    background-color: rgb(236, 138, 102);
+    padding: 10px 20px;
+}
+.order-container button:hover{
+   background-color: blue;
+   color: white;
+}
+@media screen and (max-width:400px) {
+    .shop-container{
+        display: grid;
+        grid-template-columns: repeat( 2 ,1fr)
+    }
+    .product-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    
+     
+        
+    }
+}
+@media screen and (max-width:400px) {
+    .shop-container{
+        display: block;
+    }
+    
+}
